@@ -10,13 +10,11 @@ resolvers += "spray repo" at "http://repo.spray.io"
 
 resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 
-resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
-
 scalacOptions in Test ++= Seq("-Yrangepos")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
 
-libraryDependencies += "io.spray" %% "spray-can" % "1.3.2"
+libraryDependencies += "org.scalaz.stream" %% "scalaz-stream" % "0.7.3"
 
 libraryDependencies += "io.spray" %% "spray-http" % "1.3.2"
 
